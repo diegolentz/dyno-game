@@ -3,9 +3,8 @@ body{
 }
 
 #board{
-    background-color: blue;
     width: 100%;
-    height: 600px;
+    height: 450px;
     position: relative;
 }
 
@@ -13,11 +12,13 @@ body{
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 190px;
+    bottom: -5px;
     left: 100px;
+
+    
 }
 
-#player img{
+#player video{
     width: 100%;
     height: 100%;
 }
@@ -28,10 +29,10 @@ body{
 
 @keyframes playerJump {
     0%{
-        bottom: 190px;
+        bottom: -5px;
     }
-    45%, 55%{
-        bottom: 300px;
+    35%, 60%{
+        bottom: 60px;
     }
 }
 
@@ -41,11 +42,12 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    background: url("./assets/background.png");
+    background: url(./assets/background.png);
     background-repeat: repeat;
     background-position: 0 0;
     background-size: auto 100%;
-    animation: animatedBackground 25s linear infinite;
+    animation: animatedBackground 33s linear infinite;
+
 
 }
 
@@ -60,19 +62,21 @@ body{
 
 #cactus{
     position: absolute;
-    bottom: 180px;
+    bottom: -5px;
     right: 0px;
-    height: 80px;
-    width: 55px;
+    height: 50px;
+    width: 40px;
+    z-index: 2;
 }
 
 .animatedCactus{
-    animation: movementCactus 2s linear infinite;
+    animation: movementCactus 3s linear infinite;
 }
 
 #cactus img{
     max-width: 100%;
     max-height: 100%;
+
 }
 
 #scoreContainer{
@@ -98,6 +102,7 @@ body{
 .button.play, .button.reset {
   border-style: solid;
   border-width: 37px 0 37px 60px;
+  
 }
 
 .button {
