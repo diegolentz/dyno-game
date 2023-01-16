@@ -4,19 +4,18 @@ body{
 
 #board{
     width: 100%;
-    height: 450px;
+    height: 480px;
     position: relative;
 }
 
 #player{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    bottom: -5px;
+    top: 370px;
     left: 100px;
-
-    
 }
+
 
 #player video{
     width: 100%;
@@ -24,15 +23,15 @@ body{
 }
 
 .playerJump{
-    animation: playerJump .8s linear;
+    animation: playerJump .7s linear;
 }
 
 @keyframes playerJump {
     0%{
-        bottom: -5px;
+        top: 370px;
     }
-    35%, 60%{
-        bottom: 60px;
+    50%{
+        top: 320px;
     }
 }
 
@@ -62,10 +61,10 @@ body{
 
 #cactus{
     position: absolute;
-    bottom: -5px;
+    top: 415px;
     right: 0px;
-    height: 50px;
-    width: 40px;
+    height: 40px;
+    width: 30px;
     z-index: 2;
 }
 
@@ -83,6 +82,7 @@ body{
     text-align-last: center;
     font-size: 50px;
     margin-top: 20px;
+
 }
 
 @keyframes movementCactus {
