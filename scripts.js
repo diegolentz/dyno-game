@@ -24,7 +24,7 @@ player.addEventListener('animationend', () => {
 
 function checkCondition() {
     if (
-        cactus.offsetLeft < (player.offsetLeft + 49)
+        cactus.offsetLeft < (player.offsetLeft + 30)
         && cactus.offsetLeft > player.offsetLeft
         && (player.offsetTop >= (cactus.offsetTop - player.offsetHeight))
     ) {
