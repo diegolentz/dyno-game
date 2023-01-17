@@ -60,7 +60,7 @@ function resetScore() {
     scoreInterval = setInterval(() => {
         score++;
         scoreElement.innerText = score;
-    }, 1000)
+    }, 3000)
 }
 
 function resetGame() {
